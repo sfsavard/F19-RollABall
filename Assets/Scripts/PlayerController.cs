@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>(); //adds the rigidbody component to our rigidbody variable. Need to set this or you'll get a null error
         count = 0;
         SetCountText();
         winText.text = "";
